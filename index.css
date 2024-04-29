@@ -1,0 +1,510 @@
+/* fonts */
+@font-face {
+	font-family: 'Nunito';
+	src: url('https://348810.selcdn.ru/webfont/nunito/300.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nunito-800';
+	src: url('https://348810.selcdn.ru/webfont/nunito/800.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nunito-500';
+	src: url('https://348810.selcdn.ru/webfont/nunito/500.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nunito-700';
+	src: url('https://348810.selcdn.ru/webfont/nunito/700.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+body{
+    scroll-behavior: smooth;
+}
+/* home */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a, .container li a{
+    text-decoration: none;
+    color: #BF9180;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    background-size: cover;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4em;
+    height: 5em;
+    border-bottom: 1px solid #BF9180;
+}
+.container ul{
+    list-style: none;
+    display: flex;
+}
+.container ul,li,a{
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+}
+.container li a{
+    text-decoration: none;
+    padding: 0.5em 0em;
+    margin: 0 1em;
+}
+.container li a:hover{
+    border-bottom: 1px solid #BF9180;
+}
+section.welcome{
+    padding-top: 5.5em;
+    background: url('./big_back.jpg');
+    color: white;
+    border: none;
+}
+section{
+    height: 100vh;
+    border-bottom: 1px solid #BF9180;
+}
+.home{
+    margin: 5em 2em;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF2E1;
+}
+.home h3{
+    letter-spacing: 1px;
+    width: 500px;
+}
+.home div{
+    padding-top: 2em;
+}
+.explore{
+    font-size: 1em;
+    padding: 10px;
+    margin: 3em;
+    background:  #A63352;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.explore:hover{
+    color: #fff;
+}
+footer{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BF9180;
+    color:  #000;
+}
+.pop,.latest{
+    display: flex;
+}
+.new{
+    position: absolute;
+    transform: translateY(-50%);
+}
+section#pop{
+    background:#FFF2E1;
+}
+#pop svg,.likes{
+    fill: #FFF2E1;
+    stroke: #BF9180;
+    color: #BF9180;
+    transition: fill 1s;
+    margin:0 0.3em;
+}
+.likes{
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+#pop svg:hover{
+    cursor: pointer;
+    fill: #BF9180;
+    stroke: #fff;
+}
+[class^="pop-"],[class^="latest-"] {
+    margin: 1em;
+    width: 300px;
+    height: 300px;
+    padding: 1em;
+    text-align: center;
+}
+[class^="latest-"]{
+    padding: 0;
+    margin: 0 1em;
+}
+p.price{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.under{
+    font-family: 'Nunito-500';
+    font-size: 5em;
+    display: flex;
+    font-weight: 800;
+    padding:  0.5em;
+}
+h3.under{
+    color: #BF9180;
+}
+div.p_l{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.red,.blue{
+    font-family: 'Nunito-800';
+}
+.blue{
+    color: lightcoral;
+    height: fit-content;
+    font-size: 2em;
+    position: absolute;
+    left: 4.7em;
+    bottom: 2.5em;
+}
+.red{
+    color: rgb(255, 47, 0);
+}
+
+/* about us */
+.share{
+    background: url('./big_brands.webp');
+    background-size: cover;
+    color: #BF9180; 
+}
+.us{
+    padding-top: 5em;
+    height: 120vh;
+    background: #FFF2E1;
+}
+.our h2{
+    text-align: center;
+    font-family: 'Nunito-800';
+    font-size: 5em;
+    border-bottom: 3px solid #BF9180;
+    padding: 0 0.1em ;
+}
+.our {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+.strive{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Nunito';
+    margin: 0.5em 0;
+}
+[class^="team-"]{
+    display: flex;
+}
+.anchors{
+    display: flex;
+    justify-content: center;
+}
+.anchors a{
+    margin: 0 1em;
+}
+.member{
+    font-family: 'Nunito-500';
+    margin: 0.5em;
+}
+.team{
+    margin: 0 1em;
+    background: #FFF2E1;
+    width: 330px;
+    text-align: center;
+}
+
+.team-1,.team-2{
+    display: flex;
+    justify-content: center;
+}
+.prof{
+    width: 200px;
+}
+h2.under{
+    text-align: center;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+.share,.location{
+    height: 100vh;
+    width: 100%;
+}
+
+.share h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 4em;
+    letter-spacing: 2px;
+}
+.share ul{
+    display: flex;
+}
+.share ul li{
+    padding: 0 3em;
+}
+.share h2,.loc h2 {
+    margin: 0 3em;
+}
+.loc ul{
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+    margin: 0 5em;
+}
+.loc a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.location{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12em;
+    align-items: center;
+    background: #260B10;
+    color: #FFF2E1;
+}
+.contact_us{
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* shops */
+
+.shop{
+    height: max-content;
+    margin-top: 5em;
+}
+.dresses,.hoodies,.tees,.suits {
+    height: 100vh;
+}
+.the{
+    display: flex;
+}
+.suits{
+    height: 110vh;
+    background: #594B3F;
+    color: white;
+    padding: 0 0.4em;
+    margin-top: 0;
+}
+.suits .under{
+    margin-top: 0.9em;
+    color: white;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.shop h2{
+    margin: 0.5em 1em;
+    width: fit-content;
+}
+.shop p{
+    font-weight: bold;
+}
+.suits h2{
+    border-bottom: 1px solid #fff;
+}
+.details{
+    display: block;
+    text-align: center;
+    height: 3em;
+}
+.details div{
+    display: flex;
+    justify-content: space-between;
+}
+.buy{
+    color: white;
+    background: #BF9180;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5em;
+    transition: background 0.4s ease-in-out;
+}
+.buy:hover{
+    color: #BF9180;
+    background: #fff;
+    border: 1px solid #BF9180;
+}
+.dresses{
+    background: #fff;
+}
+.dresses h2{
+    margin: 0 1em;
+    border-bottom: 1px solid #000;
+}
+.tees,.dresses,.hoodies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4em 0 ;
+}
+.tees{
+    background: #FFF2E1;
+    color:darkred;
+}
+.tees h2{
+    border-bottom: 1px solid darkred;
+}
+.hoodies{
+    background: #260B10;
+    color: #FFF2E1;
+}
+.hoodies h2{
+    border-bottom: 1px solid #FFF2E1;
+}
+[class^="suit-"],[class^="hood-"],[class^="tee-"],[class^="dress-"] {
+    margin: 0 1em;
+}
+.costume{
+    margin: 5em 0;
+}
+.costume ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* contact */
+.contacts{
+    padding-top: 5em;
+    height: 100vh;
+    color: rgb(104, 29, 29);
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 120vh;
+}
+.contacts h1{
+ width: 100%;
+ margin-left: 0em;
+ font-size: 3em;
+}
+td label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+td input{
+    width: 250px;
+    height: 40px;
+    margin: 1em;
+    border: none;
+    background: rgb(241, 241, 241);
+    border-radius: 0.5em;
+    padding-left: 1em;
+}
+td input:hover{
+    border: 1px solid #BF9180;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+td input:focus{
+    outline: 1px solid #BF9180;
+    color: #260B10;
+}
+.st0{
+    fill:transparent;
+}
+.st1{
+    fill:none;
+    stroke:#BF9180;
+    stroke-width:18;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+.st2{
+    fill:transparent;
+    stroke:#BF9180;
+    stroke-width:18;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+.st3{
+    fill:transparent;
+    stroke:#BF9180;
+    stroke-width:14;
+    stroke-linecap:round;
+}
+.st4{
+    fill:transparent;
+    stroke:#BF9180;
+    stroke-width:14;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+.contact_svg{
+    width: 520px;
+    float: right;
+    margin-bottom: 20em;
+    padding-right: 3em;
+    z-index: 0;
+}
+
+/* blog*/
+.blog {
+    display: flex;
+    padding-top: 5em;
+    height: 100vh;
+    justify-content: center;
+    background: #FFF2E1;
+}
+.blog p{
+    margin: 0.5em 0;
+}
+[class^="blog-"]{
+    margin: 0 0.5em;
+    width: 400px;
+    text-align: center;;
+}
+.read{
+    border-radius: 0;
+    font-size: 1.5em;
+    margin: 0.8em 0;
+    cursor: pointer;
+}
+.hidden{
+    height: 380px;
+    overflow: hidden;
+}
+
+
+/* carousel */
